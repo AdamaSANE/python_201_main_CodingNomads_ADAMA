@@ -1,0 +1,17 @@
+# Read in 10 numbers from the user.
+# Place all 10 numbers into an list in the order they were received.
+# Print out the second number received, followed by the 4th, 
+# then the 6th, then the 8th, then the 10th.
+# Then print out the 9th, 7th, 5th, 3rd, and 1st number:
+#
+# Example input:  1,2,3,4,5,6,7,8,9,10
+# Example output: 2,4,6,8,10,9,7,5,3,1
+
+user_numbers = []
+for i in range(10):
+    num = int(input(f"Entrez le nombre {i+1} : "))
+    user_numbers.append(num)
+# Afficher 2e, 4e, 6e, 8e, 10e
+print(user_numbers[1], user_numbers[3], user_numbers[5], user_numbers[7], user_numbers[9], end=",")
+# Afficher 9e, 7e, 5e, 3e, 1er
+print(user_numbers[8], user_numbers[6], user_numbers[4], user_numbers[2], user_numbers[0], sep=",")
