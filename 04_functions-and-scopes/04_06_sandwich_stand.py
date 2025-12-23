@@ -3,3 +3,12 @@
 # - takes an arbitrary amount of toppings
 # - returns a string representing a sandwich with the bread on top
 #   and bottom, and the toppings in between.
+
+def make_sandwich(bread_type, *toppings):
+    sandwich = f"{bread_type} bread\n"
+    for topping in toppings:
+        sandwich += f"- {topping}\n"
+    sandwich += f"{bread_type} bread"
+    return sandwich
+
+print(make_sandwich("Wheat", "Lettuce", "Tomato", "Turkey", "Senegalese Mustard"))

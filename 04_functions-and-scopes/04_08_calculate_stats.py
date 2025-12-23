@@ -4,8 +4,21 @@
 
 example_list = [1, 2, 3, 4, 5, 6, 7]
 
-def stats():
-  # define the function here
-  pass
 
-# call the function below here
+def stats(numbers):
+    """Affiche le maximum, minimum, moyenne et somme d'une liste de nombres."""
+    maximum = max(numbers)
+    minimum = min(numbers)
+    average = sum(numbers) / len(numbers)
+    total_sum = sum(numbers)
+
+    print(f"Maximum: {maximum}")
+    print(f"Minimum: {minimum}")
+    print(f"Average: {average}")
+    print(f"Sum: {total_sum}")
+
+
+
+# Appel de la fonction avec example_list
+stats(example_list)
+stats()
