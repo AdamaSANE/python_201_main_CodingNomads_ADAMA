@@ -4,5 +4,18 @@
 # - ENVIRONMENT="development"
 # - SECRET="i ate your sweets"
 # 
-# Then write the necessary code to access and print the values of these
-# two environment variables in this script.
+
+import os
+
+env = os.environ.get("ENVIRONMENT")
+secret = os.environ.get("SECRET")
+
+print(f"ENVIRONMENT = {env}")
+print(f"SECRET = {secret}")
+import os
+
+env = os.environ.get("ENVIRONMENT")
+secret = os.environ.get("SECRET")
+
+print(f"ENVIRONMENT = {env}")
+print(f"SECRET = {secret}")
